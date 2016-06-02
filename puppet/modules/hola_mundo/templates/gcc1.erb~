@@ -1,0 +1,16 @@
+#/etc/puppet/modules/hola_mundo/templates/gcc1.erb
+
+$TTL 1D
+@	IN SOA	ns1.dominiogcc2.com. root.dominiogcc2.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+;Servidor
+	IN	NS	ns1.dominiogcc2.com.
+
+;Hosts
+ns1	IN	A	127.0.0.2
+ns2	IN	A	127.0.0.3
+

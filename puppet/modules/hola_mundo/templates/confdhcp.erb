@@ -1,0 +1,13 @@
+#/etc/puppet/modules/hola_mundo/templates/confdhcp.erb
+
+option domain-name ns1.dominiogcc2.com;
+option domain-name-servers 127.0.0.1;
+option subnet-mask 255.255.255.0;
+option routers 127.16.100.1;
+default-lease-time 86400;
+max-lease-time 691200;
+min-lease-time 3600;
+
+subnet 127.0.0.0 netmask 255.255.255.0{
+	range 127.0.0.2 127.0.0.99;
+}

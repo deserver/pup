@@ -1,0 +1,15 @@
+#/etc/puppet/modules/hola_mundo/templates/gcc2.erb
+$TTL 1D
+@	IN SOA	ns1.dominiogcc2.com. root.dominiogcc2.com. (
+					0	; serial
+					1D	; refresh
+					1H	; retry
+					1W	; expire
+					3H )	; minimum
+;Servidor
+	IN	NS	ns1.dominiogcc2.com.
+
+;Hosts
+2	IN	PTR	ns1.dominiogcc2.com.
+3	IN	PTR	ns2.dominiogcc2.com.
+
