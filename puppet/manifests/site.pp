@@ -1,7 +1,7 @@
 #/etc/puppet/manifests/site.pp
 
-stage{[1,2,3,4,5,6]:}
-stage[1] -> stage[2] -> stage[3] -> stage[4] -> stage[5] -> stage[6]
+stage{[1,2,3,4]:}
+stage[1] -> stage[2] -> stage[3] -> stage[4]
 
 node "puppet.linux.org" {
 	include instalacion
